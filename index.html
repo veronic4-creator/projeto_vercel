@@ -3,25 +3,72 @@
   <head>
     <meta charset="UTF-8">
     <meta name=" viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padoca Mágica</title>
+    <title>Padoka Mágica</title>
   
     <link rel="stylesheet" href="./CSS/home.css">
   </head>
   <body>
-    <!-- Conteúdo da página -->
+    <!--Cabeçalho da página -->
      <header id="header" class="header">
+     <div class="logoContainer">
+         <img src="CSS\assets\img\LogoImage.png" alt="Logo da Padoka Mágica">
+     </div>
       <nav class="navigation">
           <a href="">Início</a>
-          <a href="">Sobre</a>
+          <a href="">História</a>
           <a href="">Como Chegar</a>
           <a href="">Cardápio</a>
       </nav>
      </header>
      <main id="content" class="content">
-        <section id="hero" class=" hero">
-        <img src="CSS/assets/img/heroImage.png" alt=" Logo da Padoca">
+        <section id="hero" class="hero">
+        <img src="CSS/assets/img/heroImage.png" alt="Logo da Padoca">
         <svg><use href= "CSS/assets/icons/seta.svg"></use></svg>
         </section>
+        <section id="historia" class="historia">
+    <h2 class="titulo-secao">Nossa História</h2>
+    <div class="historia-conteudo">
+        <div class="historia-texto">
+            <p>A Padoka Mágica nasceu em 2011, na cozinha do Seu Tomohisa, em Mitakihara. Enquanto a família saía para trabalhar e estudar, ele cuidava da horta e assava pães para os vizinhos, que logo começaram a fazer fila no portão toda manhã.</p>
+            <p>Hoje a equipe cresceu. A Mami cuida das tortas e do chá da tarde, a Kyoko nunca deixa ninguém sair sem provar o Taiyaki de Maçã do Amor e a Sayaka recheia o famoso Sonho Azul Oceano. Já a Homura assa o Pão Integral Loop Temporal quantas vezes for preciso até ele sair perfeito.</p>
+            <p>Nossa única regra: nenhum produto vem com contrato escondido.  Se um gatinho branco aparecer no balcão oferecendo desejos, pode ignorar.</p>
+        </div>
+        <div class="historia-cards">
+            <div class="card">
+                <span class="card-numero">2011</span>
+                <p>Primeira fornada na cozinha do Seu Tomohisa</p>
+            </div>
+            <div class="card" id="card-azul">
+                <span class="card-numero">5</span>
+                <p>Garotas mágicas trabalhando no forno e no balcão</p>
+            </div>
+            <div class="card" id="card-amarelo">
+                <span class="card-numero">40+</span>
+                <p>Receitas, do Brigadeiro Grief Seed à Rosquinha Soul Gem</p>
+            </div>
+            <div class="card">
+                <span class="card-numero">∞</span>
+                <p>Loops temporais da Homura até a fornada ficar perfeita</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="como-chegar" class="como-chegar">
+    <h2 class="titulo-secao">Como chegar</h2>
+    <div class="chegar-container">
+        <div class="mapa">
+            <iframe src="https://maps.google.com/maps?q=Pra%C3%A7a%20da%20S%C3%A9%2C%20S%C3%A3o%20Paulo&z=15&output=embed" loading="lazy" title="Mapa da Padoka Magica"></iframe>
+        </div>
+        <div class="info-endereco">
+            <h3>Endereço</h3>
+            <p>Rua Mitakihara, 123 Centro<br>São Paulo - SP<br>CEP 01000-000</p>
+            <h3>Horário de funcionamento</h3>
+            <p>Segunda a sábado: 6h às 20h<br>Domingo: 7h às 13h<br>Fechamos mais cedo em noite de Walpurgisnacht.</p>
+            <h3>Transporte</h3>
+            <p>A 5 minutos a pé da estação de metrô. Se no caminho você entrar no labirinto de uma bruxa, é só seguir o cheiro de pão quentinho.</p>
+        </div>
+    </div>
+</section>
      </main>
   </body>
 </html>
