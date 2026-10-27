@@ -28,6 +28,7 @@
     color: var(--texto-principal);
     padding: 15px 30px;
 }
+
 @font-face{
     font-family: 'Fonte Corpo';
     src: url(../assets/fonts/Poppins-Regular.ttf);
