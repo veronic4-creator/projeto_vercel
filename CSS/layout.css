@@ -6,27 +6,39 @@
     box-sizing:border-box;
 }
 
+/* Deixa a rolagem da página suave ao clicar nos links do menu */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos globais do corpo da página */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--cinza-roxo);
+  background-color: #fffaf5;
+}
+
+.navigation a {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    text-decoration:none;
+    color: var(--texto-principal);
+    padding: 15px 30px;
+}
+
 .header {
     position:absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     z-index:100;
-
     background-color: var(--cor-principal);
     height: var(--altura-header);
     color: var(--texto-principal);
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.navigation a {
-    display:inline;
-    justify-content:space-between;
-    text-decoration:none;
-    color: var(--texto-principal);
-    padding: 15px 30px;
 }
 
 @font-face{
