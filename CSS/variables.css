@@ -1,39 +1,40 @@
-:root {
-    --cor-rosa: #ffb6bb;
-    --cor-amarela: #ffe691;
-    --cor-roxa: #585872;
-    --cor-azul: #95d5ee;
-    --cor-vermelho: #9e4446;
+:root{
+    --cor--principal: #FFC7AE;
+    --cor--secundaria: black;
+    --padrao--texto--cor:black;
+    --secundaria--texto--cor:white;
+    --altura--header: 7.5vh;
+    --altura--footer: 15vh;
 
-    --cor-branca:#fafafa;
+    /*CORES DA PADOQUINHA:*/
     
-    --altura-header: 7.5vh;
-    --altura-footer: 15vh;
+    --hero:#FFE691;
+    --local:#95d5ee;
+    --cabeça--pe:#585872;
+    --titulos:#9e4446;
+
+    --rosa:#ffb6bb;
+    --amarelo:#ffe691;
+    --roxa:#585872;
+    --azul:#95d5ee;
+    --vermelho:#9e4446;
 }
 
-@font-face{
-    font-family: 'Fonte Corpo';
-    src: url(./assets/assets/fontes/Poppins-Italic);
+@font-face {
+    font-family: Pacifico ;
+    src: url(../assets/fonts/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: CORPO;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
-    font-family: 'Fonte Corpo';
-    src: url(../assets/fonts/Poppins-Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'Fonte Corpo';
-    src: url(../fontes/Poppins-Italic.ttf);
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face{
-    font-family: 'Fonte Corpo';
+@font-face {
+    font-family: CORPO - afroitaliano;
     src: url(../assets/fonts/Poppins-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
+}
