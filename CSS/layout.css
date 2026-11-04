@@ -1,142 +1,69 @@
-@import url(variables.css);
-@import url(layout.css);
+@import url("./variables.css");
+@import url("./layout.css");
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing:border-box;
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
-    padding: 120px 50px 60px 50px;
-    background-color: var(--amarelo);
+body{
+    font-family: var(--fonte-principal);
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 
-.heroTexto{
-    width: 50%;
-}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
 
-.heroTitulo{
-    color: var(--vermelho);
-    font-family: 'Pacifico';
-    font-size: 56px;
-    font-weight: 300;
-    line-height: 1.3;
-    margin-bottom: 20px;
-}
+    height: var(--header-height);
 
-.heroTag{
-    background-color: white;
-    color: var(--vermelho);
-    font-weight: bold;
-    width: fit-content;
-
-    padding: 6px 16px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-
-.heroSubtitulo{
-    margin-bottom: 35px;
-    font-size: large;
-}
-
-# header {
-    position:absolute;
-    top: 0px;
-    left: 0px;
-    width: 100px;
-    background-color: var(--cor-rosa);
-    height:var(--altura-header);
-    color:var(--cor-amarela);
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-
-}
- .logoConteiner {
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    gap: 10px;
- }
-
- .logoConteiner h1 {
-     font-family: 'Fonte Titulo';
- }
+    background: white;
     
- .logoContainer img {
-     width: auto;
-     height: calc(var(--altura-header) - 1vh);
- }
 
-/* --- ESTILOS DOS CARDS DA HISTÓRIA --- */
-
-.historia-conteudo {
     display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.historia-texto {
-    width: 50%;
-    text-align: justify;
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.historia-cards {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+
+    z-index: 1000;
+}
+
+nav ul{
+    display: flex;
     gap: 20px;
+    list-style: none;
 }
 
-.card {
-    width: 45%;
-    background-color: var(--rosa);
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-numero {
-    display: block;
-    font-size: 32px;
+nav a{
+    text-decoration: none;
+    color: #ebe9e3;
     font-weight: 600;
-    color: #9E4446;
-    margin-bottom: 10px;
+
 }
 
-.card p {
-    font-size: 15px;
+nav a:hover{
+    color: #e6cb60;
 }
 
-#card-azul {
-    background-color: #95D5EE;
+.logo h1{
+    color: #e6cb60;
 }
 
-#card-amarelo {
-    background-color: #FFE691;
+main{
+    margin-top: var(--header-height);
 }
 
-.info-endereco {
-    width: 50%;
-    text-align: justify;
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 20px;
+footer{
+    display: flex;
+    justify-content: space-around;
+
+    padding: 40px;
+
+    background: #1f2833;
+    color: rgb(247, 240, 240);
 }
