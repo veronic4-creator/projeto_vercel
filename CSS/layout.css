@@ -1,69 +1,196 @@
-@import url("./variables.css");
-@import url("./layout.css");
+@import url(variables.css);
 
-/* Reset CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: var(--fonte-principal);
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top:var(--altura--header) ;
 }
 
-header{
+body{
+   font-family: 'CORPO';
+   color: var(--roxa);
+}
+
+.header{
     position: fixed;
-    top: 0;
+    top: 0; left: 0;
     width: 100%;
+    z-index: 100;
 
-    height: var(--header-height);
+    background-color: var(--header--footer--cor);
+    color: var(--padrao--texto--cor);
 
-    background: white;
-    
+    height: var(--altura--header);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 2);
+}
 
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 40px;
-
-    z-index: 1000;
+    padding: 15px 50px;
+    width: 100%;
 }
 
-nav ul{
+.logoContainer {
     display: flex;
-    gap: 20px;
-    list-style: none;
+    align-items: center;
+    gap: 10px;
+    color: inherit;
+    transition: 150ms;
 }
 
-nav a{
+.logoContainer:hover{
+   scale: 102.5%;
+}
+
+.logoContainer img {
+   /* width: auto;
+    height: 50px;*/
+    height:calc(var(--altura--header) - 1vh);
+}
+
+.logoContainer h1 {
+    font-family: 'Pacifico';
+    font-size: 2rem;
+    font-weight: lighter;
+    color: white;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menuContainer a {
     text-decoration: none;
-    color: #ebe9e3;
-    font-weight: 600;
-
+    color: white;
+    transition: 0.3s;
 }
 
-nav a:hover{
-    color: #e6cb60;
+.menuContainer a:hover {
+    color: var(--rosa);
 }
 
-.logo h1{
-    color: #e6cb60;
+.footer{
+    padding: 50px 50px 50px;
+    background-color: var(--roxa);
+    color: var(--secundaria--texto--cor);
 }
 
-main{
-    margin-top: var(--header-height);
+.footerLogo{
+    margin-bottom: 10px;
+    font-family: 'Pacifico';
+    color: var(--amarelo);
 }
 
-footer{
+.footerContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
 
-    padding: 40px;
+.footerColuna{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
 
-    background: #1f2833;
-    color: rgb(247, 240, 240);
+.footerColuna h3{
+  margin-bottom: 15px;
+  color: var(--amarelo);
+}
+
+.footerColuna a{
+    color: inherit;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.footerColuna a:hover{
+    color: var(--rosa);
+    transform: translateX(5px);
+}
+
+.copyright{
+    border-top: 1px solid var(--rosa);
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    html{scroll-padding-top: 170px;}
+
+    .header{
+        height: auto;
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    .footer{padding: 40px 20px 20px;}
+    .footerContainer{flex-direction: column;}
+    .footerColuna{width: 100%;}
+}
+
+@media (max-width: 768px){
+    .hero{
+        flex-direction: column;
+        padding: 190px 20px 60px;
+    }
+
+    .heroTexto, .heroImagem{width: 100%;}
+
+    .heroTexto {text-align: center;}
+
+    .heroTag{margin: 0 auto 20px;}
+
+    .heroTitulo{font-size: 38px;}
+
+    .botaoSecundario{margin-left: 0; margin-top: 10px;}
+
+    .circulo{
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+
+    .selo{
+        width: 85px;
+        height: 85px;
+        right: 20px;
+        font-size: 14px;  
+    }
+
+    .historia, .comoChegar, .contato{padding: 70px 20px;}
+    .tituloSecao{font-size: 34px;}
+    .historiaConteudo{flex-direction: column;}
+
+    .historiaTexto, .historiaCards, .infoEndereco , .mapa, .card{width: 100%;}
+
+    .comoChegarConteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .infoEndereco{
+        padding-right: 100px;
+    }
+    .formulario{padding: 25px;}
+
 }

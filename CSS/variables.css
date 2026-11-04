@@ -1,132 +1,25 @@
 :root{
-    --cor-header-footer: #272633;
+    --cor--principal: #FFC7AE;
+    --cor--secundaria: black;
+    --padrao--texto--cor:black;
+    --secundaria--texto--cor:white;
+    --altura--header: 7.5vh;
+    --altura--footer: 15vh;
 
-    --cor-hero: #F3DD88;
+    /*Cores*/
+    
+    --hero:#FFE691;
+    --local:#95d5ee;
+    --header--footer--cor:#585872;
+    --titulos:#9e4446;
 
-    --cor-historia: #FFFFFF;
-
-    --cor-como-chegar: #8AC5E0;
-
-    --cor-contato: #F5B7BE;
-
-    --cor-fundo: #F4F4F4;
-
-    --cor-texto: #241919;
-
-    --cor-branco: #FFFFFF;
-
-    --header-height: 80px;
+    --rosa:#ffb6bb;
+    --amarelo:#ffe691;
+    --roxa:#585872;
+    --azul:#95d5ee;
+    --vermelho:#9e4446;
 }
 
-#header{
-    background-color: var(--cor-header-footer);
-    color: white;
-
-    position: fixed;
-    top: 0;
-
-    width: 100%;
-    height: var(--header-height);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 40px;
-}
-
-#hero{
-    background-color: var(--cor-hero);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 100px 10%;
-}
-
-#body{
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    font-family: Arial, sans-serif;
-}
-
-#nav a{
-    color: white;
-    text-decoration: none;
-}
-
-#historia{
-    background-color: var(--cor-historia);
-
-    display: flex;
-    gap: 40px;
-
-    padding: 80px 10%;
-}
-.card{
-    background-color: #F8F8F8;
-
-    border-radius: 10px;
-
-    padding: 20px;
-
-    box-shadow: 0 2px 5px rgba(0,0,0,.1);
-}
-#comoChegar{
-    background-color: var(--cor-como-chegar);
-
-    display: flex;
-    gap: 40px;
-
-    padding: 80px 10%;
-}
-#contato{
-    background-color: var(--cor-contato);
-
-    padding: 80px 10%;
-}
-input,
-select,
-textarea{
-    width: 100%;
-
-    padding: 12px;
-
-    border: none;
-    border-radius: 8px;
-}
-button,
-.hero-botoes a{
-    background-color: var(--cor-header-footer);
-
-    color: white;
-
-    padding: 12px 20px;
-
-    border-radius: 8px;
-
-    text-decoration: none;
-
-    border: none;
-
-    cursor: pointer;
-}
-
-button:hover,
-.hero-botoes a:hover{
-    opacity: 0.9;
-}
-footer{
-    background-color: var(--cor-header-footer);
-
-    color: white;
-
-    display: flex;
-    justify-content: space-around;
-
-    padding: 40px;
-}
 @font-face {
     font-family: Pacifico ;
     src: url(../assets/fonts/Pacifico.ttf);

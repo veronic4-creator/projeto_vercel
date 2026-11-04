@@ -1,145 +1,313 @@
 @import url(layout.css);
+@import url(variables.css);
 
-section{
-    padding: 80px 10%;
-}
-
-/* HERO */
-
-#hero{
+.hero{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    min-height: 100vh;
+    padding: 120px 50px 60px 50px;
+    background-color: var(--amarelo);
 }
 
-.hero-texto{
-    flex: 1;
+.heroTexto{
+    width: 50%;
 }
 
-.hero-imagem{
-    flex: 1;
-    text-align: center;
+.heroTitulo{
+    color: var(--vermelho);
+    font-family: 'Pacifico';
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 20px;
 }
 
-.hero-imagem img{
-    width: 300px;
-    border-radius: 50%;
+.heroTag{
+    background-color: white;
+    color: var(--vermelho);
+    font-weight: bold;
+    width: fit-content;
+
+    padding: 6px 16px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 
-.hero-botoes{
-    margin-top: 20px;
+.heroSubtitulo{
+    margin-bottom: 35px;
+    font-size: large;
 }
 
-.hero-botoes a{
-    text-decoration: none;
-    background: var(--cor-principal);
+.botao{
+    display: inline-block;
+    background-color: var(--vermelho);
     color: white;
 
-    padding: 12px 20px;
+    border: 2px solid var(--vermelho);
+    border-radius: 30px;
 
-    border-radius: 8px;
+    padding: 14px 30px;
+    font-weight: bold;
+    transition: 300ms;
 }
 
-/* HISTÓRIA */
+.botaoSecundario{
+    margin-left: 10px;
+    background-color: transparent;
+    color:var(--vermelho);
+}
 
-#historia{
+.botao:hover{
+    background-color: darkred;
+    border-color: darkred;
+    transform: translateY(-3px);
+}
+
+.botaoSecundario:hover{
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+    color: white;
+}
+
+.heroImagem{
+    width: 45%;
     display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.circulo{
+    width: 380px;
+    height:380px;
+    border: 10px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.madoka{
+    position: absolute;
+    width: 75%;
+    bottom: 0; left: 12%;
+    transform: translateY(-6.5%) scale(-0.75, 0.75);
+    z-index: 2;
+}
+
+.pao{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.selo{
+    position: absolute;
+    bottom: 20px;
+    right: 180px;
+    z-index: 0;
+   
+
+    height: 100px;
+    width: 100px;
+    
+    background-color: var(--azul);
+    border: 5px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    
+    transform: rotate(-25deg);
+}
+
+.sobre{
+    padding: 100px 50px;
+    background-color: white;
+}
+
+.tituloSecao{
+    margin-bottom: 50px;
+
+    font-family: 'Pacifico';
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--vermelho);
+}
+
+.historiaConteudo{
+    display: flex;
+    align-items: center;
     gap: 50px;
 }
 
-.cards{
-    display: grid;
+.historiaTexto{
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+}
 
-    grid-template-columns:
-    repeat(2,1fr);
-
+.historiaCards{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
-    
 }
 
 .card{
-    background: white;
-    padding: 20px;
-    border-radius: 40px;
+    width: 45%;
+    padding: 25px;
 
+    background-color: var(--rosa);
+    border-radius: 15px;
     text-align: center;
+    transition: 300ms;
 }
 
-/* COMO CHEGAR */
+.card:hover{
+    transform: scale(1.05);
+}
 
-#comoChegar{
+.cardNumero{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--vermelho);
+}
+
+.cardAzul{background-color: var(--azul);} 
+.cardAmarelo{background-color: var(--amarelo);}
+
+.comoChegar{
+    padding: 100px 50px;
+    background-color: var(--azul);
+}
+
+.comoChegarConteudo{
     display: flex;
     gap: 40px;
 }
 
-.mapa,
-.informacoes{
-    flex: 1;
+.mapa{
+    width: 60%;
 }
 
-iframe{
+.mapa iframe{
+    display: block;
     width: 100%;
-    height: 300px;
-    border: none;
+    height: 420px;
+    
+    border: 6px solid white;
+    border-radius: 15px;
 }
 
-/* CONTATO */
+.infoEndereco{
+    /* width: 40%; */
+    padding: 35px;
 
-form{
+    background-color: white;
+    border-radius: 15px;
+}
+
+.infoEndereco h3{margin-bottom: 8px; font-size: 20px; color: var(--vermelho);}
+.infoEndereco p {margin-bottom: 25px; line-height: 1.6;}
+
+.contato{
+    padding: 100px 50px;
+    background-color: var(--rosa);
+}
+
+.contato .tituloSecao{
+    margin: 15px;
+}
+
+.contatoTexto{
+    margin-bottom: 40px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.formulario{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(158, 67, 70, 0.2);
 }
 
-.campo{
-    display: flex;
-    flex-direction: column;
+.formulario label{margin-bottom: 6px; font-weight: bold;}
+
+.formulario input, .formulario select, .formulariotextarea{
+    margin-bottom: 6px; font-weight: bold;
+    border: 2px solid var(--azul); border-radius: 8px;
+    font-family: inherit; font-size: 15px; color: var(roxa);
 }
 
-input,
-select,
-textarea{
-    padding: 10px;
-}
+.formulario input:focus, .formulario select:focus, .formulario textarea:focus{
+outline: none; border-color: var(--vermelho);}
 
-button{
-    padding: 12px;
-    background: var(--cor-principal);
-    color: white;
-    border: none;
+.formulario textarea{height: 130px; resize: vertical;}
+
+.botaoEnviar{
+    margin-top: 15px;
+    font-family: inherit;
+    font-size: 16px;
     cursor: pointer;
 }
 
-/* RESPONSIVIDADE */
-
-@media(max-width:768px){
-
-    #hero{
-        flex-direction: column;
+@media (min-width: 1200px){
+    .selo{
+        right: 220px;
     }
+}
 
-    #historia{
-        flex-direction: column;
-    }
+@media (max-width: 768px){
+  .madoka{
+    position: absolute;
+    width: 65%;
+    bottom: 0; left: 55px;
+    transform: translateY(-35%) scale(-1, 1);
+    z-index: 2;
+  }
 
-    #comoChegar{
-        flex-direction: column;
-    }
+  .selo{
+    position: absolute;
+    bottom: -30px;
+    left: 184px;
+    z-index: 1;
+   
 
-    footer{
-        flex-direction: column;
-        gap: 30px;
-    }
+    height: 100px;
+    width: 90px;
+    
+    background-color: var(--azul);
+    border: 5px solid white;
+    border-radius: 50%;
 
-    header{
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
 
-    nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.circulo{
+    width: 380px;
+    height:380px;
+    border: 10px solid white;
+    border-radius: 35% 35% 35% 550px;
+    overflow: hidden;
+    position: relative;
+}
+
 }

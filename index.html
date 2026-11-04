@@ -1,233 +1,205 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Padoka Mágica</title>
-
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/layout.css">
+    <title>Padoka Magika</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="shortcut icon"
+     href="./assets/img/LogoImage.png"
+     type="image/png">
 </head>
+
 <body>
-
-    <header id="header">
-
-        <div class="logo">
-            <img src="./assets/img/logo.png" alt="Logo">
-            <h1>Padoka Mágica</h1>
+ <header id="header" class="header">
+    <nav class="navigation">
+        <div class="logoContainer">
+            <img src="./assets/img/LogoImage.png" alt="Logo da Padoka Magika">
+            <h1>Padoka Magika</h1>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#hero">Início</a></li>
-                <li><a href="#historia">Sobre</a></li>
-                <li><a href="#comoChegar">Como Chegar</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="./cardapio.html">Cardápio</a></li>
-            </ul>
-        </nav>
+        <div class="menuContainer">
+            <a href="./index.html#hero" class="link-menu">Início</a>
+            <a href="./index.html#sobre" class="link-menu">Sobre</a>
+            <a href="./index.html#comoChegar" class="link-menu">Como Chegar</a>
+            <a href="./index.html#contato" class="link-menu">Contato</a>
+            <a href="./cardapio.html">Cardápio</a>
+        </div>
+    </nav>
+</header>
 
-    </header>
+<main>
+    <section id="hero" class="hero">
+        <div class="heroTexto">
+        <p class="heroTag">Padaria artesanal de Mitakihara</p>
+        <h1 class="heroTitulo">Faça um contrato com o pão quentinho</h1>
+        <p class="heroSubtitulo">
+            Aqui ninguem precisa virar garota magica pra ter um desejo
+            realizado. Experimente o croissant rosa da Madoka, o pão de queijo da
+            Charlotte e a torta Tiro Finale da Mami, sempre com um chá bem quentinho
+        </p>
+        <div class="heroBotoes">
+            <a href="#contato" class="botao">Fazer meu pedido</a>
+            <a href="#sobre" class="botao botaoSecundario">Conheça a gente</a>
+        </div>
+        </div>
+        <div class="heroImagem">
+            <div class="circulo">
 
-    <main>
+            <img src="./assets/img/Madoka.png" alt="Madoka" class="madoka">
+            <img
+            src="./assets/img/heroImage.png" alt="Pão" class="pao">
 
-        <!-- HERO -->
-        <section id="hero">
-
-            <div class="hero-texto">
-
-                <span>Padaria artesanal de Mitakihara</span>
-
-                <h2>
-                    Pães mágicos para transformar seu dia
-                </h2>
-
-                <p>
-                    Sabores incríveis inspirados no universo de Madoka Magica.
-                </p>
-
-                <div class="hero-botoes">
-                    <a href="#contato">Fazer meu pedido</a>
-                    <a href="#historia">Conheça a gente</a>
-                </div>
-
+            <!--<svg><use href="./assets/icons/seta.svg"></use></svg>-->
             </div>
+            <p class="selo">Desde<br>2011</p>
+        </div>
+    </section>
 
-            <div class="hero-imagem">
-                <img src="./assets/img/padoka.png" alt="Padoka">
-                <div class="selo">
-                    <span>Desde</span>
-                    <strong>2011</strong>
+    <section id="sobre" class="sobre">
+        <h2 class="tituloSecao">Nossa historia</h2>
+        <div class="historiaConteudo">
+            <div class="historiaTexto">
+                <p>
+                    A Padoquinha nasceu em 2011, na cozinha do Seu Tomohisa, em Mitakihara.
+                    Enquanto a familia saia pra trabalhar e estudar, ele cuidava da horta e assava
+                    pães para os vizinhos, que logo começaram a fazer fila no portão toda manhã.
+                </p>
+                <p>
+                    Hoje a equipe cresceu. A Mami cuida das tortas e do chá da tarde, 
+                    a Kyoko nunca deixa ninguem sair sem provar o Taiyaki de Maçã do Amor
+                    e a Sayaka recheia o famoso Sonho Azul Oceano. Ja a Homura assa o Pão Integral
+                    Loop Temporal quantas vezes for preciso ate ele sair perfeito.
+                </p>
+                <p>
+                    Nossa única regra: nenhum produto vem com contrato escondido. 
+                    Se um gatinho branco aparecer no balcão oferendo desejos, pode ignorar.
+                </p>
+            </div>
+            <div class="historiaCards">
+                <div class="card">
+                    <span class="cardNumero">2011</span>
+                    <p>Primeira fornada na cozinha do Seu Tomohisa</p>
+                </div>
+                <div class="card cardAzul">
+                    <span class="cardNumero">5</span>
+                    <p>Garotas magicas trabalhando no forno e no balcão</p>
+                </div>
+                 <div class="card cardAmarelo">
+                    <span class="cardNumero">40+</span>
+                    <p>Receitas, do Brigadeiro Grief Seed à Rosquinha Soul Gem</p>
+                </div>
+                 <div class="card">
+                    <span class="cardNumero">∞</span>
+                    <p>Loops temporais da Homura ate a fornada ficar perfeita</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
-
-        <!-- HISTÓRIA -->
-        <section id="historia">
-
-            <div class="historia-texto">
-
-                <h2>Nossa História</h2>
-
-                <p>
-                    A Padoka Mágica nasceu em 2011.
-                </p>
-
-                <p>
-                    Inspirada no universo de Madoka Magica.
-                </p>
-
-                <p>
-                    Hoje servimos dezenas de receitas especiais.
-                </p>
-
-            </div>
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>2011</h3>
-                    <p>Primeira fornada</p>
-                </div>
-
-                <div class="card">
-                    <h3>5</h3>
-                    <p>Garotas mágicas</p>
-                </div>
-
-                <div class="card">
-                    <h3>40+</h3>
-                    <p>Receitas</p>
-                </div>
-
-                <div class="card">
-                    <h3>∞</h3>
-                    <p>Loops temporais</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- COMO CHEGAR -->
-        <section id="comoChegar">
-
+    <section id="comoChegar" class="comoChegar">
+        <h2 class="tituloSecao">Como Chegar</h2>
+        <div class="comoChegarConteudo">
             <div class="mapa">
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb="
-                    loading="lazy">
-                </iframe>
-
+                <iframe src="https://www.google.com/maps/place/maid+caf%C3%A9+liberdade
+                /data=!4m2!3m1!1s0x94ce596a7bf46e53:0xace8aa3c0e803d2b?sa=X&ved=1t:242&ictx=111"
+                loading="lazy"
+                title="Mapa da Padoquinha"></iframe>
             </div>
-
-            <div class="informacoes">
-
-                <h2>Como Chegar</h2>
-
-                <p>Rua das Garotas Mágicas, 100</p>
-
-                <p>Segunda à Sábado</p>
-
-                <p>07h às 20h</p>
-
+            <div class="infoEndereco">
+                <h3>Endereço</h3>
+                <p>
+                 Rua Mitakihara, 123 - Centro<br>Sao Paulo - SP<br>CEP 01000-000
+                </p>
+                <h3>Horario de funcionamento</h3>
+                <p>Segunda a sabado: 06h às 20h<br>Domingo: 07h às 13h<br> 
+                Fechamos mais cedo em noite de Walpurgisnacht</p>
+                <p>A 5 minutos a pé da estação de metrô. Se no caminho você 
+                entrar no labirinto de uma bruxa, é só seguir o cheiro de pão quentinho.
+                </p>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <section id="contato" class="contato">
+        <h2 class="tituloSecao">Contato</h2>
+        <p class="contatoTexto">
+            Quer fazer uma encomenda ou tirar uma dúvida? Manda uma mensagem!
+            Prometemos realizar seu pedido sem cobrar sua alma.
+        </p>
 
-        <!-- CONTATO -->
-        <section id="contato">
+        <form id="formContato" class="formulario" action="#">
+            <label for="nome">Nome</label>
+            <input type="text"
+            id="nome" name="nome" placeholder="Escreva seu nome" required>
 
-            <h2>Contato</h2>
+            <label for="email">E-mail</label>
+            <input type="email" id="email"
+            name="email" placeholder="seuemail@email.com" required>
 
-            <form>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone"
+            placeholder="(11) 99999-0123">
 
-                <div class="campo">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" required>
-                </div>
+            <label for="assunto">Assunto</label>
+            <select name="assunto" id="assunto">
+                <option value="encomenda">Encomenda</option>
+                <option value="duvida">Dúvida</option>
+                <option value="elogio">Elogios</option>
+                <option value="desejo">Fazer um desejo (não recomendamos)</option>
+            </select>
 
-                <div class="campo">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" required>
-                </div>
+            <label for="produto">Produto</label>
+            <select name="produto" id="produto">
+                <option value="croissant">Croissant Rosa da Madoka</option>
+                <option value="paoQueijo">Pão de Queijo da Charlotte</option>
+                <option value="torta">Torta Tiro Finale da Mami</option>
+                <option value="taiyaki">Taiyaki de Maçã do Amor da Kyoko</option>
+                <option value="sonho">Sonho Azul Oceano da Sayaka</option>
+                <option value="integral">Pão Integral Loop Temporal da Homura</option>
+                <option value="rosquinha">Rosquinha Soul Gem</option>
+                <option value="brigadeiro">Brigadeiro Grief Seed</option>
+                <option value="cafe">Café Walpurgisnacht (extra forte)</option>
+            </select>
 
-                <div class="campo">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" required>
-                </div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Escreva seu pedido aqui."required></textarea>
 
-                <div class="campo">
-                    <label for="assunto">Assunto</label>
+            <button type="submit" class="botao botaoEnviar">Enviar pedido</button>    
+        </form>
+    </section>
 
-                    <select id="assunto">
-                        <option>Encomenda</option>
-                        <option>Dúvida</option>
-                        <option>Elogio</option>
-                        <option>Fazer um desejo</option>
-                    </select>
-                </div>
 
-                <div class="campo">
-                    <label for="produto">Produto</label>
 
-                    <select id="produto">
-                        <option>Pão Francês</option>
-                        <option>Bolo</option>
-                        <option>Sonho</option>
-                    </select>
-                </div>
+</main>
+<footer class="footer">
+    <div class="footerContainer">
 
-                <div class="campo">
-                    <label for="mensagem">Mensagem</label>
-
-                    <textarea
-                        id="mensagem"
-                        rows="6">
-                    </textarea>
-                </div>
-
-                <button type="submit">
-                    Enviar pedido
-                </button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-    <footer id="footer">
-
-        <div>
-            <h3>Padoka Mágica</h3>
-            <p>Padaria temática inspirada em Madoka Magica.</p>
+        <div class="footerColuna">
+        <p class="footerLogo">Padoquinha</p>
+        <p>Padaria artesanal de Mitakihara desde 2011. Pao quentinho, chá da tarde e nenhum contrato escondido</p>
         </div>
 
-        <div>
-            <h3>Links</h3>
-
-            <ul>
-                <li>Início</li>
-                <li>Sobre</li>
-                <li>Contato</li>
-            </ul>
+      <div class="footerColuna">
+        <h3>Navegação</h3>
+           <a href="./index.html#hero" class="link-menu">Início</a>
+            <a href="./index.html#sobre" class="link-menu">Sobre</a>
+            <a href="./index.html#comoChegar" class="link-menu">Como Chegar</a>
+            <a href="./index.html#contato" class="link-menu">Contato</a>
+            <a href="./cardapio.html">Cardápio</a>
         </div>
-
-        <div>
-            <h3>Contato</h3>
-
-            <p>(11) 99999-9999</p>
-            <p>padoka@magica.com</p>
-            <p>Instagram: @padokamagica</p>
-        </div>
-
-    </footer>
-
-    <script src="./js/app.js"></script>
-
+    <div class="footerColuna">
+        <h3>Fale conosco</h3>
+        <p>(11) 3333-4444</p>
+        <p>(11) 9999-9999</p>
+        <p>contato@padoquinha.com.br</p>
+        <p>@padoquinhaDaFiel</p>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>&copy;2026 Padoquinha. Todos os direitos reservados. Nenhuma Soul gem foi escurecida no preparo dos nossos produtos</p>
+    </div>
+</footer>
+<script src="./js/app.js"></script>
 </body>
 </html>
