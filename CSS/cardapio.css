@@ -1,14 +1,15 @@
 @import url(./layout.css);
+@import url(./variables.css);
 
 .cardapioTopo{
-    background-color: var(--cor-amarela);
+    background-color: var(--amarelo);
     text-align: center;
-    padding: calc(var(--altura-header) + 60px);
+    padding: calc(var( --altura--header) + 60px);
 }
 
 .cardapioTag{
-    background-color: var(--cor-branca);
-    color: var(--cor-vermelho);
+    background-color: white;
+    color: var(--vermelho);
     font-weight: bold;
 
     width: fit-content;
@@ -19,9 +20,9 @@
 }
 
 .cardapioTitulo{
-    color: var(--cor-vermelho);
+    color: var(--vermelho);
 
-    font-family: "Fonte Titulo";
+    font-family: "Pacifico";
     font-size:56px;
 }
 
@@ -47,10 +48,11 @@
     margin-top: 20px;
 }
 
+
 .categoriaCabecalho{
-    border-bottom: 3px solid var(--cor-azul);
+    border-bottom: 3px solid var(--azul);
     margin-bottom: 25px;
-    padding-bottom: 10px;
+    margin-top: 10px;
 }
 
 .listaItens{
@@ -60,8 +62,8 @@
 }
 
 .item{
-    width: cal(50% - 10px); 
-    padding: 20px;
+    width: calc(50% - 10px); 
+    padding: 10px;
 
     display:flex;
     justify-content: space-between;
@@ -69,7 +71,7 @@
     align-items: flex-start;
     gap: 15px;
 
-    border-left: 6px solid var(--cor-vermelho);
+    border-left: 6px solid var(--vermelho);
     border-radius: 12px;
 }
 
